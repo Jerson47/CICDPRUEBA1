@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src/ ./src/
 
 WORKDIR /app/src
-CMD ["python", "-c", "from main import Calculator; print(Calculator().sum(2, 2))"]
+CMD ["python", "main.py"]
